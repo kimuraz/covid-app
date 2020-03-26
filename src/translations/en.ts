@@ -15,6 +15,18 @@ export default {
         'The simulation has some limitations and uncertanties, mainly because we do not know with accuracy some epidemiologics and clinics parameters of the disease. Some of these coefficients have a huge impact on the final result. Depending on the case, small variations of these parameters can affect a lot the simulation results.',
       introductionP3:
         'Search for one of the brazilian regions to verify its data and predictions',
+      regionTable: {
+        name: 'Name',
+        population: 'Population',
+        nurseryBeds: 'Nursery beds',
+        ICUBeds: 'ICU beds',
+        nurseryOccupancy: 'Nursery occupancy',
+        ICUOccupancy: 'ICU occupancy',
+      },
+      countingDays: 'Counting days',
+      nurseryDemand: 'Nursery demand',
+      hospitalCapacity: 'Hospital capacity',
+      resources: 'Resources',
     },
   },
 };

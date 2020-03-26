@@ -15,6 +15,18 @@ export default {
         'A simulação possui algumas limitações e incertezas, principalmente porque ainda não conhecemos com muita precisão alguns parâmetros epidemiológicos e clínicos da doença. Alguns destes fatores possuem enorme impacto sobre o resultado final. Dependendo do caso, pequenas variações destes parâmetros podem afetar bastante o resultado das simulações.',
       introductionP3:
         'Procure por um dos munípios brasileiros para verificar seus dados e previsões.',
+      regionTable: {
+        name: 'Nome',
+        population: 'População',
+        nurseryBeds: 'Leitos de enfermaria',
+        ICUBeds: 'Leitos de UTI',
+        nurseryOccupancy: 'Ocupação enfermaria',
+        ICUOccupancy: 'Ocupação UTI',
+      },
+      countingDays: 'Dias contabilizados',
+      nurseryDemand: 'Necessidade de leitos',
+      hospitalCapacity: 'Capacidade hospitalar',
+      resources: 'Recursos',
     },
   },
 };
