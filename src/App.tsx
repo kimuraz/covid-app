@@ -4,6 +4,7 @@ import {useTranslation} from 'react-i18next';
 import {Container} from '@material-ui/core';
 
 import Navbar from './components/Navbar';
+import Report from './components/Report';
 
 import './App.scss';
 
@@ -14,9 +15,11 @@ const App: React.SFC = () => {
     <div className="App">
       <Router>
         <Navbar />
-        <Container>
+        <Container className="container">
           <Switch>
-            <Route path="/" exact></Route>
+            <Route path="/" exact>
+              <Report />
+            </Route>
             <Route path="/about"></Route>
             <Route path="/contribute"></Route>
           </Switch>
