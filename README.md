@@ -37,6 +37,38 @@ Instead, it will copy all the configuration files and the transitive dependencie
 
 You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
+## Run with docker
+
+1. Build your docker image:
+
+First, you have to build your docker image
+```
+docker build . -t covid-app
+```
+
+`-t <tag-name>` gives a tag for the image
+
+
+2. Run docker
+
+Run docker so you can see your app
+```
+sudo docker run -it -p 3000:3000 -v $PWD:/app covid-app
+```
+`-it` runs it interactively
+
+`-p <port-out>:<port-in>` exposes port-in to be used as port-out of the container
+
+`-v <path-out>:<path-in>` maps volumes so you can use files in the container outside it
+
+`<tag-name>` use your tag name from the last command
+
+3. Access notebook in your browser
+
+It will show a link so you can click on it and access scripts and files in your browser
+
+Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+
 ## Learn More
 
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
